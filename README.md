@@ -32,10 +32,10 @@ if __name__ == '__main__':
 	BJDs = getBJD(**kwargs)
 ```
 # Requirements
-- numpy
-- selinium (pip install selinium)
-	-phantomJS (or Firefox) 
-	-Installation Instructions for PhantomJS (http://stackoverflow.com/questions/13287490/is-there-a-way-to-use-phantomjs-in-python)
+1. numpy
+2. selinium (pip install selinium)
+..*phantomJS (or Firefox) 
+..*Installation Instructions for PhantomJS (http://stackoverflow.com/questions/13287490/is-there-a-way-to-use-phantomjs-in-python)
 
 # Instructions for using Firefox
 To use firefox pass ```python FF = True ``` into the GetBJD function call
