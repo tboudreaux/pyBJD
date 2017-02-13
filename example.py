@@ -1,4 +1,3 @@
-import barycorr
 from astropy import units as u
 from astropy.coordinates import SkyCoord
 import pandas as pd
