@@ -5,7 +5,7 @@ convert JD to BJD in a relatively convoluted manner using a very helpful website
 
 - Single JD
 ```python
-from pyBJD import getBJD
+from pyBJD import GetBJD
 if __name__ == '__main__':
 	kwargs = {
     	"iJD": "2457796.500000",
@@ -19,7 +19,7 @@ if __name__ == '__main__':
 ```
 - List of JD
 ```python
-from pyBJD import getBJD
+from pyBJD import GetBJD
 if __name__ == '__main__':
 	kwargs = {
     	"iJD": ["2457796.500000", "2457797.500000", "2457798.500000", "2457799.500000"],
@@ -31,3 +31,10 @@ if __name__ == '__main__':
    	}
 	BJDs = getBJD(**kwargs)
 ```
+# Requirements
+- numpy
+- selinium
+	-phantomJS (or Firefox)
+
+# Instructions for using Firefox
+To use firefox pass ```python FF = True ``` into the GetBJD function call
