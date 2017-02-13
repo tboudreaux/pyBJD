@@ -66,7 +66,7 @@ if __name__ == '__main__':
 ..2. Installation Instructions for PhantomJS (http://stackoverflow.com/questions/13287490/is-there-a-way-to-use-phantomjs-in-python)
 
 # Instructions for using Firefox
-To use firefox pass ```python FF = True ``` into the GetBJD function call
+To use firefox pass ```FF = True ``` into the GetBJD function call
 as an example see below
 ```python
 from pyBJD import GetBJD
