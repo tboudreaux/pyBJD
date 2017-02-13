@@ -8,7 +8,7 @@ import os
 from jdcal import gcal2jd, jd2gcal
 import getBJD
 
-# Given some root folder (which should be up on this repository)
+# Given some root folder (The exampleFiles.zip file -- to use unzip that in local directory)
 
 JD = []
 rBJD = []
