@@ -1,6 +1,34 @@
 # pyBJD
 convert JD to BJD in a relatively convoluted manner using a very helpful website from Ohio State
-
+# Docstring
+    """
+    Gets BJD from returned result at:
+    
+        http://astroutils.astronomy.ohio-state.edu/time/utc2bjd.html
+        
+    Ohio State University IDL based UTC to BJD code
+    
+    Sateless function
+    
+    Params:
+        iJD - list or single UTC JD value [string]
+        iRA - hh:mm:ss Right Ascension for target [string]
+        iDEC - dd:mm:ss Declination for target [string]
+        iLAT - decimal degrees of latitude for observation location [string]
+        iLON - decimal degrees of longitude for observation location [string]
+        iALT - elevation of obvsevation from sea level in meters [string]
+        
+    Returns:
+        BJDs - list of returnes BJDs as floats of length n = length iJD
+        
+    Exeptions:
+        BAD_JD - JD formated incorrectly, will raise an assertation error showing JDs
+                    all JDs should be castable to a float            
+    Prerequisits:
+        Selinium - Webserver interaction
+        PhantomJS - invisible webdriver
+        numpy - array handeling
+    """
 # Examples
 
 - Single JD
