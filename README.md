@@ -16,8 +16,8 @@ if __name__ == '__main__':
    	}
 	BJDs = getBJD(**kwargs)
 ```
-```python
 - List of JD
+```python
 if __name__ == '__main__':
 	kwargs = {
     	"iJD": ["2457796.500000", "2457797.500000", "2457798.500000", "2457799.500000"],
