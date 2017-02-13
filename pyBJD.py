@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys 
 from numpy import array, ndarray
 
-def GetBJD(iJD=0, iRA=0, iDEC=0, iLAT=0, iLON=0, iALT=0):
+def GetBJD(iJD=0, iRA=0, iDEC=0, iLAT=0, iLON=0, iALT=0, FF=False):
     """
     Gets BJD from returned result at:
     
@@ -31,6 +31,7 @@ def GetBJD(iJD=0, iRA=0, iDEC=0, iLAT=0, iLON=0, iALT=0):
         PhantomJS - invisible webdriver
         numpy - array handeling
     """
+    assert FF == True or FF == False
     URL = 'http://astroutils.astronomy.ohio-state.edu/time/utc2bjd.html'
     
     if not isinstance(iJD, (list, ndarray)):
@@ -43,8 +44,11 @@ def GetBJD(iJD=0, iRA=0, iDEC=0, iLAT=0, iLON=0, iALT=0):
         else:
             JD_send += "{}".format(e)
 
-    #interact with webserver        
-    driver = webdriver.PhantomJS()   # phantomJS required
+    #interact with webserver    
+    if FF is False:
+        driver = webdriver.PhantomJS()   # phantomJS required
+    else if FF is True:
+        driver = webdriver.Firefox()
     driver.get(URL)
     ra = driver.find_element_by_name('ra')
     ra.send_keys(iRA)
