@@ -2,8 +2,9 @@
 convert JD to BJD in a relatively convoluted manner using a very helpful website from Ohio State
 
 # Examples
-'''
+
 - Single JD
+```python
 if __name__ == '__main__':
 	kwargs = {
     	"iJD": "2457796.500000",
@@ -14,8 +15,8 @@ if __name__ == '__main__':
     	"iALT": "2172"
    	}
 	BJDs = getBJD(**kwargs)
-'''
-''' 
+```
+```python
 - List of JD
 if __name__ == '__main__':
 	kwargs = {
@@ -27,4 +28,4 @@ if __name__ == '__main__':
     	"iALT": "2172"
    	}
 	BJDs = getBJD(**kwargs)
-'''
+```
