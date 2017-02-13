@@ -50,7 +50,7 @@ if __name__ == '__main__':
     	"iLAT": "-30.1716", 
     	"iLON": "-70.8009", 
     	"iALT": "2172",
-	"FF" = True
+		"FF" = True
    	}
 	BJDs = getBJD(**kwargs)
 ```
