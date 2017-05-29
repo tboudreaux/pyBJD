@@ -18,7 +18,7 @@ setup(name='pyBJD',
       ],
       install_requires=['astropy>=1.3.2',
       					'numpy>=1.12.0',
-      					'selinium>=3.4.2'],
+      					'selenium>=3.4.2'],
       packages=['pyBJD'],
       zip_safe=False
 	)
