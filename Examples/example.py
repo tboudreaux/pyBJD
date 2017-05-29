@@ -38,5 +38,5 @@ kwargs = {
     "iLON": params[4],
     "iALT": params[5]
 }
-bjd = CustomBaryCorr.GetBJD(**kwargs)
+bjd = GetBJD(**kwargs)
 print bjd
