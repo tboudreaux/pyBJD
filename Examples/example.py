@@ -3,7 +3,7 @@ from astropy.coordinates import SkyCoord
 import pandas as pd
 import numpy as np
 import os
-import getBJD
+from pyBJD import getBJD
 
 # Given some root folder (The exampleFiles.zip file -- to use unzip that in local directory)
 
