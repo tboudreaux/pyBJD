@@ -47,7 +47,7 @@ def GetBJD(iJD=0, iRA=0, iDEC=0, iLAT=0, iLON=0, iALT=0, FF=False):
     #interact with webserver    
     if FF is False:
         driver = webdriver.PhantomJS()   # phantomJS required
-    else if FF is True:
+    elif FF is True:
         driver = webdriver.Firefox()
     driver.get(URL)
     ra = driver.find_element_by_name('ra')
