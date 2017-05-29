@@ -1,7 +1,7 @@
 # pyBJD
 convert JD to BJD in a relatively convoluted manner using a very helpful website from Ohio State
 
-# Instillation
+# Installation
 ```sh
 $ git clone https://github.com/tboudreaux/pyBJD.git
 $ cd pyBJD
