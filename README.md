@@ -3,7 +3,7 @@ convert JD to BJD in a relatively convoluted manner using a very helpful website
 
 # Instillation
 ```sh
-$ git clone https://github.com/tboudreaux/pyBJD
+$ git clone https://github.com/tboudreaux/pyBJD.git
 $ cd pyBJD
 $ python setup.py install
 ```
