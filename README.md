@@ -1,4 +1,5 @@
 # pyBJD
+## Note that pyBJD is no longer activly supported, as astroSynth now has built in BJD conversion supported
 convert JD to BJD in a relatively convoluted manner using a very helpful website from Ohio State
 
 # Installation
